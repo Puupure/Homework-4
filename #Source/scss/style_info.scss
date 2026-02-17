@@ -14,13 +14,15 @@ body {
 .header {
    margin-top: 32px;
    display: flex;
+   justify-content: center;
 
    &__container {
-      width: 1240px;
-      margin: 0 auto;
+      max-width: 1240px;
+      width: 100%;
+      margin: 32px auto;
+      padding: 0 24px;
       border: 1px solid #0075FF;
       border-radius: 30px;
-      margin-top: 32px 0;
    }
 
    &__box {
@@ -53,7 +55,7 @@ body {
    @media (max-width: 1024px) {
       &__container {
          max-width: 824px;
-         padding: 0 24px;
+         padding: 0 20px;
       }
 
       &__box {
@@ -73,6 +75,7 @@ body {
 
       &__container {
          max-width: 327px;
+         padding: 0 16px;
          border-radius: 30px;
       }
 
@@ -159,11 +162,10 @@ body {
       }
    }
 
-}
-
-@media (max-width: 375px) {
-   &__container {
-      max-width: 375px;
+   @media (max-width: 375px) {
+      &__container {
+         max-width: 375px;
+      }
    }
 }
 
@@ -175,7 +177,7 @@ body {
       width: 100%;
       max-width: 1240px;
       margin: 0 auto;
-      padding: 48px 0;
+      padding: 48px 20px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -246,13 +248,17 @@ body {
          max-width: 824px;
       }
 
+      &__left {
+         flex-direction: column;
+      }
+
       &__text {
-         font-size: 16px;
+         font-size: 14px;
       }
 
       &__icon {
-         width: 16px;
-         height: 16px;
+         width: 14px;
+         height: 14px;
 
          img {
             width: 100%;
@@ -262,13 +268,18 @@ body {
          }
       }
 
+      &__contacts {
+         flex-direction: column;
+         align-items: end;
+      }
+
       &__nick {
-         font-size: 16px;
+         font-size: 14px;
       }
 
       &__img {
-         width: 16px;
-         height: 16px;
+         width: 14px;
+         height: 14px;
 
          img {
             width: 100%;
